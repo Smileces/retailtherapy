@@ -22,11 +22,12 @@ nav{
 
 label.logo{
     color: black;
-    font-size: 30px;
-    line-height: 80px;
+    font-size: 20px;
+    line-height: 100px;
     padding: 0 80px;
-    font-weight: bold;
+    font-weight: 800;
     transition: .2s ease;
+    cursor: pointer;
 
 }
 
@@ -37,12 +38,12 @@ nav ul{
 
 nav ul li{
     display: inline-block;
-    line-height: 80px;
+    line-height: 100px;
 }
 
 nav ul li a{
     color: black;
-    font-size: 17px;
+    font-size: 12px;
     padding: 7px 13px;
 
 }
@@ -70,7 +71,7 @@ a.active, a:hover {
 }
 
 .checkbtn i:hover{
-    background-color: orange;
+    background-color: white;
 }
 
 #check{
@@ -81,29 +82,33 @@ a.active, a:hover {
 @media (max-width:952px){
     label.logo{
         font-size: 25px;
-        padding-left: 50px;
+        /* padding-left: 50px; */
     }
 
     nav ul li a{
         font-size: 14px;
-
     }
+
 }
 
 @media (max-width:858px){
     .checkbtn{
         display: block;
+        font-size: 40px;
+    }
 
+    .checkbtn i{
+        line-height: 100px;
     }
 
     ul{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #fff;
-        top: 80px;
+        background: white;
+        top: 100px;
         left: -100%;
-        padding-top: 80px;
+        padding-top: 10px;
         text-align: center;
         transition: .5s ease;
     }
@@ -111,7 +116,7 @@ a.active, a:hover {
     nav ul li{
         display: block;
         margin: 30px 0;
-        line-height: 30px;
+        line-height: 50px;
     }
 
     nav ul li a{
@@ -120,7 +125,7 @@ a.active, a:hover {
 
     a.active, a:hover{
         background: none;
-        color: blue;
+        color: black;
 
     }
 
@@ -135,7 +140,6 @@ a.active, a:hover {
         display: block; 
         font-size: 15px;
         text-align: center;
-
     }
 
     /* label.logo img{
@@ -143,19 +147,59 @@ a.active, a:hover {
         align-items: center;
     } */
 
-    nav.img1 img{
+    /* nav.img1 img{
       display: flex;
       align-items: center;
       justify-content: center;
 
-    }
+    } */
 
 }
 
 nav img{
     position: relative;
-    top: 20px;
-    left: 20px;
-    line-height: 20px;
-    width: 120px;
+    top: 10px;
+    left: 75px;
+    line-height: 10px;
+    width: 70px;
+    cursor: pointer;
+}
+
+@media (max-width:858px){
+    nav img{
+        width: 150px; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        left: 40px;
+    }
+    label.logo{
+        font-size: 30px;
+    }
+    
+}
+
+
+@media (max-width:712px){
+    label.logo{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:626px){
+    label.logo{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:536px){
+    label.logo{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:444px){
+    label.logo{
+        font-size: 10px;
+    }
 }
