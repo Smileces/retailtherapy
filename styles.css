@@ -24,7 +24,7 @@ label.logo{
     font-size: 30px;
     line-height: 80px;
     padding: 0 80px;
-    font-style: italic;
+    font-weight: bold;
     transition: .2s ease;
 
 }
@@ -47,7 +47,7 @@ nav ul li a{
 }
 
 a.active, a:hover { 
-    background: purple;
+    background: white;
     transition: .5s;
 }
 
@@ -151,3 +151,10 @@ a.active, a:hover {
 
 }
 
+nav img{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    line-height: 20px;
+    width: 120px;
+}
